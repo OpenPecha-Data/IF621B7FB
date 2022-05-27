@@ -1,0 +1,455 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Bibliotheca Polyglotta</title>
+<link rel='stylesheet' type='text/css' href='css/bp.css'>
+<link rel='stylesheet' type='text/css' href='css/diac_doc.css'>
+
+<link rel='stylesheet' type='text/css' href='css/imageGallery.css'>
+<link rel='stylesheet' type='text/css' href='css/ss.css'>
+	      <link rel='stylesheet' type='text/css' href='css/tree_menu.css'>
+<script type="text/javascript" src="js/jquery-1.3.2.js"></script>
+<!--  <script type="text/javascript" src="js/jqModal.js"></script>-->
+<script type="text/javascript" src="js/common.js"></script>
+<script type="text/javascript" src="js/tree_menu.js"></script>
+<!-- <script src="js/analytics_tracking.js" type="text/javascript"></script> -->
+
+
+<!-- <script type="text/javascript" src="js/popupDivhandling.js"></script> -->
+<!--  <script type="text/javascript" src="jquery-latest.js"></script>
+<script type="text/javascript" src="js/jquery-imagegallery.js"></script>-->
+</head>
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//vrtx.uio.no/js/analytics/v2/analytics.js','ga');
+
+ga('create', 'UA-86407471-1', 'auto');
+ga(function(tracker) {
+
+	// Modifies sendHitTask to hit ipproxy instead of http://www.google-analytics.com directly
+	tracker.set('sendHitTask', function(model) {
+		payload = model.get('hitPayload');
+		var xhr = new XMLHttpRequest();
+		xhr.open('GET', '//w3prod-ipproxy.uio.no/collect' +'?' + payload, true);
+		xhr.send();
+	});
+		ga('send', 'pageview');
+});
+</script>
+<body><div class='banner'></div><!-- banner --><div class='uiologo'>
+<a href='http://www.hf.uio.no/'><img src='https://www2.hf.uio.no/polyglotta/hfe.png' border='0'></a></div><!-- uiologo --><div class='clear'></div>
+<div class='smule_tittel'>
+<div class='brodsmuleboks'>You are here: <a href='/polyglotta/index.php' accesskey='1'> BP HOME</a> >  <a href='/polyglotta/index.php?page=library&amp;bid=2' accesskey='1'>TLB</a> > <a href='/polyglotta/index.php
+	?page=volume&amp;vid=425' accesskey='1'>MSV 1,04: Varṣāvastu</a> > fulltext</div><div class='clear'></div>
+<div class='headline'>MSV 1,04: Varṣāvastu<div class='clear'></div></div><!-- headline -->
+</div><!-- smule_tittel -->
+<!--<div>-->
+
+<h2 class="trigger" id="tr_lang"><a  href="#">Choose languages</a></h2>
+<h2 class="trigger" id="tr_img"><a  href="#">Choose images, etc.</a></h2>
+
+
+<div id="toggle_container_lan">
+
+<form  id="tr"  name="Sprakvalg2" action="inc/set_cookie_lan.php" method="POST">
+
+<div style="float:left; width:auto; text-align:left; margin-left:20px;">
+<h5>Choose languages</h5>
+<ul>
+<input value="Choose all" type="button" onClick="markAll('tr')"><input value="Uncheck all" type="button" onClick="markNone('tr')">
+
+	<li class="tip" title="Checkbox :: Enable text"><label class="f1_checkbox"><input type="checkbox" name="spraak_valg_ct_425[2956]" value="2956" id="lancheckbox" checked >Sanskrit: san</label></li><li class="tip" title="Checkbox :: Enable text"><label class="f1_checkbox"><input type="checkbox" name="spraak_valg_ct_425[2951]" value="2951" id="lancheckbox" checked >Tibetan: Kj ’dul ba ka</label></li><li class="tip" title="Checkbox :: Enable text"><label class="f1_checkbox"><input type="checkbox" name="spraak_valg_ct_425[2955]" value="2955" id="lancheckbox" checked >Chinese: chi 義淨 Yijing</label></li><li class="tip" title="Checkbox :: Enable text"><label class="f1_checkbox"><input type="checkbox" name="spraak_valg_ct_425[2971]" value="2971" id="lancheckbox" checked >English: Comments, </label></li><div style="clear:both"></div>
+<input type='submit' name='set_cookie' value='Save view'>
+<div style="clear:both"></div>
+
+</ul>
+<input type="hidden" name="vid" value="425">
+<input type="hidden" name="page" value="fulltext">
+</form>
+</div>
+</div>
+
+<div id="toggle_container_img">
+<form  id="tr"  name="Sprakvalg2" action="inc/set_cookie_img.php" method="POST">
+
+<div style="float:left; width:auto; text-align: left;">
+<h5>Choose display</h5>
+<ul>
+		
+	<li> 
+		<input type='checkbox' name='bilder' checked="checked" > Enable images
+	</li>
+	<li> 
+	<input type='checkbox' onclick="onOffCheckbox();" name='fotnoter' checked="checked"> Enable footnotes
+	<div id="pff" style="display:block" >
+	<ul>
+	<li><input type='radio' name='fotnote_valg'  value='show_a' checked> Show all footnotes</li>
+	<li><input type='radio' name='fotnote_valg'  value='show_h'  > Minimize footnotes</li>
+	</ul>
+	</li>
+	
+	</div>
+	<div style="float:left; width:20em; text-align: left; margin-left:120px ">
+	<div style="clear:both"></div>
+	<input type='submit' name='set_cookie' value='Save view'>
+	<div style="clear:both"></div>
+	</div>
+	
+</ul>
+<input type="hidden" name="vid" value="425">
+<input type="hidden" name="page" value="fulltext">
+</form>
+</div>
+	
+
+
+
+</div>
+</div>
+
+<div class='sok'><form name='Sok' id='FormBlock' action='/polyglotta/index.php' method='get'>
+<input type='hidden' name='page' value='search'>
+<input type='hidden' name='bid' value='2'>
+<input type='hidden' name='vid' value='425'>
+<div class='sokeboks'>
+<input name='sokefelt' id='sokeboks' type='text' size='30' value=''>
+<input type='submit' name='Sok' value='Search' id='nsubmit'>
+<div class='clear'></div><a class="diacbutton" id="diacbutton" href="#">Diacritica</a><a id="diac2button" class="diac2button"  href="#">Diacritica-help</a><a class="s2button" href="https://wiki.uio.no/hf/dmlf/index.php/Kategori:Polyglotta:Documentation:SearchHelp">Search-help</a><div class='diacritical' id='diacritical_sign'><div style="text-align: left; ">
+<table class = 'diacritica' width="200" border="1" cellpadding="1" cellspacing="1" id="diacritical">
+    <tbody>
+        <tr>
+            <td style="text-align: center; ">ā</td>
+            <td style="text-align: center; ">ī</td>
+            <td style="text-align: center; ">ū</td>
+            <td style="text-align: center; ">ṛ</td>
+            <td style="text-align: center; ">ṝ</td>
+            <td style="text-align: center; ">ḷ</td>
+        </tr>
+        <tr>
+            <td style="text-align: center; ">ḹ</td>
+            <td style="text-align: center; ">&rsquo;</td>
+            <td style="text-align: center; ">ṃ</td>
+            <td style="text-align: center; ">ḥ</td>
+            <td style="text-align: center; ">ṅ</td>
+            <td style="text-align: center; ">&ntilde;</td>
+        </tr>
+        <tr>
+            <td style="text-align: center; ">ṭ</td>
+            <td style="text-align: center; ">ḍ</td>
+            <td style="text-align: center; ">ṇ</td>
+            <td style="text-align: center; ">ṣ</td>
+            <td style="text-align: center; ">ś</td>
+            <td style="text-align: center; ">ź</td>
+        </tr>
+        <tr>
+            <td style="text-align: center; ">&scaron;</td>
+            <td style="text-align: center; ">č</td>
+            <td style="text-align: center; ">ǰ</td>
+            <td style="text-align: center; ">&gamma;</td>
+            <td style="text-align: center; ">&nbsp;</td>
+            <td style="text-align: center; ">&nbsp;</td>
+        </tr>
+    </tbody>
+</table>
+</div></div><!-- diacritical --><div id="ex3a" class="jqmDialog"><div>
+	<span style="font-size:12px;">Note on the transliteration:</span></div>
+<div>
+	<span style="font-size:12px;">The transliteration system of the BP/TLB is based on the Unicode/UTF-8 system. However, there may be difficulties with some of the letters &ndash; particularly on PC/Windows-based systems, but not so much on the Mac. We have chosen the most accepted older and traditional systems of transliteration against, e.g, Wylie for Tibetan, since with Unicode it is possible, in Sanskrit and Tibetan, etc., to represent one sound with one letter in almost all the cases (excepting Sanskrit and Tibetan aspirated letters, and Tibetan tsa, tsha, dza). We thus do not use the Wylie system which widely employs two letters for one sound (ng, ny, sh, zh etc.).</span></div>
+<div>
+	&nbsp;</div>
+<div>
+	<span style="font-size:12px;">Important:</span></div>
+<div>
+	<span style="font-size:12px;">We ask you in particular to note the use of the &rsquo; apostrophe and not the &#39; representing the avagrāha in Sanskrit, and most important the &rsquo;a-chuṅ in Tibetan. On the Mac the &rsquo; is Alt-M.</span></div>
+<div>
+	&nbsp;</div>
+<div>
+	<span style="font-size:12px;">If you cannot find the letters on your key-board, you may click on the link &quot;Diacritica&quot; to access it for your search.</span></div>
+</div><!-- diacritical_doc --><div class='clear'></div><select name='searchmode'><option selected value='phrase'>Search for exact phrase</option>
+<option  value='phraseregex'>Search for exact phrase (regex)</option>
+<option  value='word'>Search for every word in one record</option>
+<option  value='free'>Search for every word fragment in one record</option>
+</select>
+<select name='context'>
+<option ($_GET[context]=="a" ? "selected" : "") value="a"> Search in all libraries</option><option selected value="bTLB">Search in TLB</option><option selected value="v425">Search in MSV 1,04: Varṣāvastu</option></select><div class='clear'></div><a class='sbutton' href='/polyglotta/index.php?page=asearch&amp;bid=2&amp;vid=425'>Choose specific texts..</a><div class='clear'></div></div></form></div><!-- sok --><div class='clear'></div><!-- clear --><div id='dcr' class='divControlRead'><div class='venstrefulltekstfelt'><div class='bverknavn'><a href='/polyglotta/index.php?page=volume&amp;vid=425'>MSV 1,04: Varṣāvastu</a></div><table class="tlvl2">
+					<tr>
+						<td bgcolor="#ffffff"> &nbsp; &nbsp;
+						<img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_7627.Verses41-58" border=0 hspace=2>
+						<a href="/polyglotta/index.php?page=fulltext&amp;view=fulltext&amp;vid=425" class="ajax_tree0">Complete text</a>
+						</td>
+					</tr>
+				  </table><input type="hidden" name="tree_top_options" id="tree_top_options" value="43103.Piṇḍoddāna|43104.Uddāna1|43105.Uddāna2|43106.Uddāna3|">
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+<img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_43103.Piṇḍoddāna" border=0 hspace=2><a id="href_43103.Piṇḍoddāna" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=425&mid=695411&level=1&cid=393135" class="ajax_tree0">Piṇḍoddāna
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+<img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_43104.Uddāna1" border=0 hspace=2><a id="href_43104.Uddāna1" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=425&mid=695412&level=1&cid=393136" class="ajax_tree0">Uddāna 1
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+<img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_43105.Uddāna2" border=0 hspace=2><a id="href_43105.Uddāna2" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=425&mid=695489&level=1&cid=393202" class="ajax_tree0">Uddāna 2
+</td></tr></table>
+<table class="tlvl2"><tr><td bgcolor="#ffffff">
+<img src="./application/class/images/expanded.gif" alt="Click to Expand/Collapse Option" title="Click to Expand/Collapse Option" id="expand_43106.Uddāna3" border=0 hspace=2><a id="href_43106.Uddāna3" href="/polyglotta/index.php?page=fulltext&view=fulltext&vid=425&mid=695520&level=1&cid=393233" class="ajax_tree0">Uddāna 3
+</td></tr></table>
+<script language=javascript>test('43105.Uddāna2|')</script><div class='bverknavn'><a href='/polyglotta/index.php?page=library&amp;bid=2'>Back to library</a></div></div><!-- venstrefulltekstfelt --><div class="clear"></div><!-- clear --><div id="nav-menu"><ul>
+  		  <li  id="nav-1"><a class="tabValgt" href="/polyglotta/index.php?page=record&amp;view=record&amp;vid=425&amp;mid=695489&amp;level=1">Sentence by sentence view</a></li>
+  		  <li  id="nav-2"><a  href="/polyglotta/index.php?page=fulltext&amp;view=fulltext&amp;vid=425&amp;cid=393202&amp;mid=695489&amp;level=1">Continuous text view</a></li>
+ 		<li  id="nav-3"><a  href="/polyglotta/admin/index.php?page=fulltext&amp;view=fulltext&amp;vid=425&amp;cid=393202&amp;mid=695489&amp;level=1">View in admin</a></li>
+
+  		  </ul></div><div class='clear'></div><!-- clear -->			<script language="javascript" type="text/javascript">
+			var kilderef = '';
+			var tekstid = 0;
+			var tekstid_bilder = 0;
+			var filsti = '';
+			var thumbnail = '';
+			</script>
+		<div class='infofulltekstfelt'><div class='BolkContainer'><div class='textvar' style='width:24%;'><div class='Sanskrit'><div class='kilderef' id='3202415'></div><div class='clear'></div><span id='3202415bi' class='paragraph'>
+							uddānam* //<br />bhaiṣajyam upasthāyaka strīpuruṣapaṇḍakaḥ<br />nimittaṃ nidhayo jñātaya antarāyeṇa prakramet* // //&nbsp;</span></div></div><div class='textvar' style='width:24%;'><div class='Tibetan'><div class='kilderef' id='3201810'></div><div class='clear'></div><span id='3201810bi' class='paragraph'>
+							sdom la |<br />kha zas sman daṅ g-yog daṅ ni ||<br />bud med skyes pa ma niṅ daṅ ||<br />mtshan ma gter daṅ gñen dag daṅ ||<br />bar chad kyis ni ’gro bya ba’o ||&nbsp;</span></div></div><div class='textvar' style='width:24%;'><div class='Chinese'><div class='kilderef' id='3202294'></div><div class='clear'></div><span id='3202294bi' class='paragraph'>
+							&nbsp;</span></div></div><div class='textvar' style='width:24%;'><div class='English'><div class='kilderef' id='3205897'></div><div class='clear'></div><span id='3205897bi' class='paragraph'>
+							Uddāna 2&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:24%;'><div class='Sanskrit'><span id='3202416bi' class='paragraph'>
+							yathāpi tad varṣopagatasya bhikṣor evaṃ bhavati / aham asminn āvāse varṣā upagataḥ. na ca me ’sti kaścit piṇḍakasya dātā. so ’haṃ piṇḍakam alabhamānaḥ klameyaṃ kālaṃ vā kuryāṃ. sa me syād antarāyaḥ aprāptasya prāptaye, anadhigatasyādhigamāya / asākṣātkṛtasya sākṣātkriyāyai / yanv aham asmād āvāsāt prakrameyaṃ. sa tasmād āvāsāt prakramaty. etad eva pratyayaṃ kṛtvā anāpattir varṣācchede //&nbsp;</span></div></div><div class='textvar' style='width:24%;'><div class='Tibetan'><span id='3201811bi' class='paragraph'>
+							’di (7) ltar yaṅ dbyar gnas par dam bcas pa’i dge sloṅ ’di sñam du sems te | gnas ’dir bdag dbyar gnas par dam bcas na bdag la bsod sñoms ster ba ni ’ga’ yaṅ med de | bdag gis bsod sñoms ma rñed pas bdag ñon mogs pa’am śin bdag gi ma thob pha (245a1) thob par bya ba daṅ | ma rtogs pa rtogs par bya ba daṅ | mṅon sum du ma byas pa mṅon sum du bya ba de’i bar chad du ’gyur gyis || ma la bdag gnas ’di nas ’gro’o sñam nas | des de lta bus rkyen byas te gnas de nas soṅ ba las dbyar ral na (2) ltuṅ ba med do ||&nbsp;</span></div></div><div class='textvar' style='width:24%;'><div class='Chinese'><span id='3202295bi' class='paragraph'>
+							(17)若苾芻作安居已。或作是念。我於此安居。無(18)人供給我食。或當2置死。或有曾未學經。應(19)須學者。曾來習定。應思惟者。或有未證應證(20)者。未見求見者。未得求得者。若有是縁。欲離(21)住處去者。佛言。無犯。亦不破安居&nbsp;</span></div></div><div class='textvar' style='width:24%;'><div class='English'><span id='3205898bi' class='paragraph'>
+							’di (7) ltar yaṅ dbyar gnas par dam bcas pa’i dge sloṅ ’di sñam du sems te | gnas ’dir bdag dbyar gnas par dam bcas na bdag la bsod sñoms ster ba ni ’ga’ yaṅ med de | bdag gis bsod sñoms ma rñed pas bdag ñon mogs pa’am śin bdag gi ma thob pha (245a1) thob par bya ba daṅ | ma rtogs pa rtogs par bya ba daṅ | mṅon sum du ma byas pa mṅon sum du bya ba de’i bar chad du ’gyur gyis || ma la bdag gnas ’di nas ’gro’o sñam nas | des de lta bus rkyen byas te gnas de nas soṅ ba las dbyar ral na (2) ltuṅ ba med do ||&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:24%;'><div class='Sanskrit'><span id='3202417bi' class='paragraph'>
+							yathāpi tad varṣopagatasya bhikṣor evaṃ bhavati. aham asminn āvāse varṣā upagataḥ. na ca me kaścid glānasya glānabhaiṣajyasya dātā. so ’haṃ bhaiṣajyam alabhamānaḥ klameyaṃ kālaṃ vā kuryāṃ. sa me syād antarāyaḥ aprāptasya prāptaye, anadhigatasyādhigamāya, asākṣātkṛtasya sākṣātkriyāyai / yanv aham asmād āvāsāt prakrameyaṃ. sa tasmād āvāsāt prakramaty. etad eva pratyayaṃ kṛtvā anāpattir varṣācchede //&nbsp;</span></div></div><div class='textvar' style='width:24%;'><div class='Tibetan'><span id='3201812bi' class='paragraph'>
+							’di ltar yaṅ dbyar gnas par dam bcas pa’i dge sloṅ ’di sñam du sems te | gnas ’dir bdag dbyar gnas par dam bcas na bdag nad kyis thebs nan pa la nad kyi sman sbyin pa ni ’ga’ yaṅ med de | bdag gis sman ma rñed pas ñon moṅs (3) pa’am śin bdag gi ma thob pa thob par bya ba daṅ | ma rtogs pa rtogs par bya ba daṅ | mṅon sum du ma byas pa mṅon sum du bya ba de’i bar chad du ’gyur gyis | mal bdag gnas ’di nas ’gro’o sñam nas | des de lta bus rkyen byas te gnas de nas soṅ ba (4) las dbyar ral na ltuṅ ba med do ||&nbsp;</span></div></div><div class='textvar' style='width:24%;'><div class='Chinese'><span id='3202296bi' class='paragraph'>
+							(22)若作安居竟。忽有病生。知無醫藥。若其便住。(23)恐命不全。如是命難等縁出去。佛言。無犯。亦(24)不破安居&nbsp;</span></div></div><div class='textvar' style='width:24%;'><div class='English'><span id='3205899bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:24%;'><div class='Sanskrit'><span id='3202418bi' class='paragraph'>
+							yathāpi tad varṣopagatasya bhikṣor evaṃ bhavaty. aham asminn āvāse varṣā upagataḥ. na ca me kaścid glānasya glānopasthāyakaḥ. so ’ham upasthāyakavirahāt* klameyaṃ kālaṃ vā kuryāṃ. sa me syād antarāyaḥ aprāptasya prāptaye, anadhigatasyādhigamāya / asākṣātkṛtasya sākṣātkriyāyai / yanv aham asmād āvāsāt prakrameyaṃ. sa tasmād āvāsāt prakramaty. etad eva pratyayaṃ kṛtvā anāpattir varṣācchede //&nbsp;</span></div></div><div class='textvar' style='width:24%;'><div class='Tibetan'><span id='3201813bi' class='paragraph'>
+							’di ltar yaṅ dbyar gnas par dam bcas pa’i dge sloṅ ’di sñam du sems te | gnas ’dir bdag dbyar gnas par dam bcas na bdag nad kyis thebs na nad g-yog byed pa ’ga’ yaṅ med do || bdag la nad g-yog byed pa med (5) pas ñon moṅs pa’am śin bdag gi ma thob pa thob par bya ba daṅ | ma rtogs pa rtogs par bya ba daṅ | mṅon sum du ma byas pa mṅon sum du bya ba de’i bar chad du ’gyur gyis || ma la bdag gnas ’di nas ’gro’o sñam nas | des de lta bus rkyen byas te gnas de nas (6) soṅ ba las dbyar ral na ltuṅ ba med do || || ’dul ba gźi | bam po ñi śu pa |&nbsp;</span></div></div><div class='textvar' style='width:24%;'><div class='Chinese'><span id='3202297bi' class='paragraph'>
+							(25)若苾芻安居已竟。若有病生。雖有湯藥。無人(26)看病。恐有失命。佛言。聽去。不破安居&nbsp;</span></div></div><div class='textvar' style='width:24%;'><div class='English'><span id='3205900bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:24%;'><div class='Sanskrit'><span id='3202419bi' class='paragraph'>
+							yathāpi tad varṣopagataṃ bhikṣuṃ strī upasaṃkramyāpratirūpayā upanimantraṇayā upanimantrayati. vasa ārya rama ārya. ahaṃ te upasthāsyāmi. duhitaraṃ te dāsyāmi snuṣāṃ te dāsīṃ te karmakarīṃ te dāsyāmi / tatra varṣopagatasya bhikṣor evaṃ bhavati / aham asminn āvāse varṣā upagata. iyaṃ ca me strī upasaṃkramyāpratirūpayā upanimantraṇayā upanimantrayati. vasa ārya rama ārya. ahaṃ te upasthāsyāmi duhitaraṃ te dāsyāmi snuṣāṃ te dāsīṃ te karmakarīṃ te dāsyāmi. ahaṃ ced asminn āvāse varṣā vaseyaṃ syān me atonidānaṃ jīvitāntarāyaḥ śrāmaṇyāntarāyo brahmacaryāntarāyaḥ. yanv aham asmād āvāsāt prakrāmeyaṃ. sa tasmād (78r = GBM 738) āvāsāt prakrāmaty. etad eva pratyayaṃ kṛtvā anāpattir varṣācchede //&nbsp;</span></div></div><div class='textvar' style='width:24%;'><div class='Tibetan'><span id='3201814bi' class='paragraph'>
+							’di ltar yaṅ dbyar gnas par dam bcas pa’i dge sloṅ gi druṅ du bud med dag ’oṅs te mi ’tsham pa’i gsol bas gsol ba ’debs te | ’phags pa bźugs (7) śig | ’phags pa dgyes par mdzod cig | khyod la bdag gis bsñen bkur bgyi’o || khyod la bu mo dbul lo || khyod la mna’ ma daṅ | khyod la bran mo daṅ | las bgyid pa ’bul lo || de na dbyar gnas par dam bcas pa’i dge sloṅ ’di sñam du (245b1) sems te | gnas ’dir bdag dbyar gnas par dam bcas na bud med ’di bdag gi druṅ du ’oṅs nas mi ’tsham ba’i gsol bas gsol ba ’debs te | ’phags pa bźugs śig | ’phags pa dgyes par mdzod cig | khyod la bdag bsñen bkur bgyi’o || (2) khyod la bu mo ’bul lo || khyod la mna’ ma daṅ | khyod la bran mo daṅ | las bgyid pa ’bul lo || źes zer te | gal te gnas ’dir bdag dbyar gnas na gźi des bdag gi srog gi bar chad daṅ | dge sbyoṅ gi tshul gyi bar chad daṅ | tshaṅs par spyod (3) pa’i bar chad du ’gyur gyis | ma la bdag gnas ’di nas ’gro’o sñam ste | des de lta bus rkyen byas nas gnas de nas soṅ ba las dbyar ral na ltuṅ ba med do ||&nbsp;</span></div></div><div class='textvar' style='width:24%;'><div class='Chinese'><span id='3202298bi' class='paragraph'>
+							(27)若苾芻作安居竟。有女人來至苾芻所。而作(28)是言。我有女新婦及婢。欲遣供養大徳。苾芻(29)作念。我若不去。恐失梵行。并有命難等起。是(1043c1)謂梵行等縁。佛言。移去者無犯。亦不破安居。&nbsp;</span></div></div><div class='textvar' style='width:24%;'><div class='English'><span id='3205901bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:24%;'><div class='Sanskrit'><span id='3202420bi' class='paragraph'>
+							yathāpi tad varṣopagataṃ bhikṣuṃ puruṣa upasaṃkramyāpratirūpayā upanimantraṇayā upanimantrayati / vasa ārya rama ārya. duhitaraṃ te dāsyāmi snuṣāṃ te dāsīṃ te karmakarīṃ te dāsyāmi. tatra varṣopagatasya bhikṣor evaṃ bhavaty. aham asminn āvāse varṣā upagataḥ. ayaṃ ca me puruṣa upasaṃkramyāpratirūpayā upanimantraṇayā upanimantrayati. vasa ārya rama ārya. duhitaraṃ te dāsyāmi snuṣāṃ te dāsīṃ te karmakarīṃ te dāsyāmy. ahaṃ ced asminn āvāse varṣā vaseyaṃ syān me atonidānaṃ jīvitāntarāyaḥ śrāmaṇyāntarāyaḥ brahmacaryāntarāyaḥ. yanv aham asmād āvāsāt prakrāmeyaṃ. sa tasmād āvāsāt prakramaty. etad eva pratyayaṃ kṛtvā anāpattir varṣācchede //&nbsp;</span></div></div><div class='textvar' style='width:24%;'><div class='Tibetan'><span id='3201815bi' class='paragraph'>
+							’di ltar yaṅ dbyar gnas par dam bcas pa’i dge sloṅ gi druṅ du skyes pa źig ’oṅs nas mi ’tsham (4) pa’i gsol bas gsol ba ’debs te | ’phags pa bźugs śig | ’phags pa dgyes par mdzod cig | khyod la bdag bsñen bkur bgyi’o || khyod la bu mo ’bul lo || khyod la mna’ ma daṅ | khyod la bran mo daṅ | las byed pa ’bul lo || de (5) na dbyar gnas par dam bcas pa’i dge sloṅ ’di sñam du sems te | gnas ’dir bdag dbyar gnas par dam bcas na bdag gi druṅ du skyes pa ’di ’oṅs nas mi ’tsham pa’i gsol bas gsol ba ’debs te | ’phags pa bźugs śig | ’phags pa dgyes (6) par mdzod cig | khyod la bdag bsñen bkur bgyi’o || khyod la bu mo ’bul lo || mna’ ma daṅ | bran mo daṅ | las bgyid pa ’bul lo źes zer na | gal te gnas ’dir bdag dbyar gnas na gźi des bdag gi srog gi bar chad daṅ | dge sbyoṅ gi tshul gyi (7) bar chad daṅ | tshaṅs par spyod pa’i bar chad du ’gyur gyis | ma la bdag gnas ’di nas ’gro’o sñam nas | des de lta bus rkyen byas te gnas de nas soṅ ba las dbyar ral na ltuṅ ba med do ||&nbsp;</span></div></div><div class='textvar' style='width:24%;'><div class='Chinese'><span id='3202299bi' class='paragraph'>
+							(2)若有男子&nbsp;</span></div></div><div class='textvar' style='width:24%;'><div class='English'><span id='3205902bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:24%;'><div class='Sanskrit'><span id='3202421bi' class='paragraph'>
+							yathāpi tad varṣopagataṃ bhikṣuṃ paṇḍaka upasaṃkramyāpratirūpayā upanimantraṇayā upanimantrayati / vasa ārya rama ārya. ahaṃ te upasthāsyāmi. dāsīṃ te karmakarīṃ te dāsyāmi / tatra varṣopagatasya bhikṣor evaṃ bhavati. aham asminn āvāse varṣā upagataḥ. ayaṃ ca me paṇḍaka upasaṃkramyāpratirūpayā upanimantraṇayā upanimantrayati. vasa ārya rama ārya. ahaṃ te upasthāsyāmi. dāsīṃ te karmakarīṃ te dāsyāmi. ahaṃ ced asminn āvāse varṣā vaseyaṃ syān me atonidānaṃ jīvitāntarāyaḥ śrāmaṇyāntarāyo brahmacaryāntarāyaḥ. yanv aham asmād āvāsāt prakrāmeyaṃ. sa tasmād āvāsāt prakramaty. etad eva pratyayaṃ kṛtvā anāpattir varṣācchede //&nbsp;</span></div></div><div class='textvar' style='width:24%;'><div class='Tibetan'><span id='3201816bi' class='paragraph'>
+							’di ltar yaṅ dbyar gnas par dam bcas pa’i dge sloṅ gi druṅ dum (246a1) niṅ źig ’oṅs nas mi ’tsham ba’i gsol bas gsol ba ’debs te | ’phags pa bźugs śig | ’phags pa dgyes par mdzod cig | khyod la bdag bsñen bkur bgyi’o || khyod la bran mo daṅ | las bgyid pa ’bul lo | de na (2) dbyar gnas par dam bcas pa’i dge sloṅ ’di sñam du sems te | gnas ’dir bdag dbyaṅ gnas par dam bcas na bdag gi druṅ du ma niṅ ’di ’oṅs nas mi ’tsham pa’i gsol bas gsol ba ’debs te | ’phags pa bźugs śig | ’phags pa dbyes (3) par mdzod cig | khyod la bdag bsñen bkur bgyi’o || khyod la bran mo daṅ | khyod la las bgyid pa ’bul lo źes zer te | gal te gnas ’dir bdag dbyar gnas na gźi des bdag gi srog gi bar chad daṅ | dge sbyoṅ gi tshul gyi bar chad daṅ | tshaṅs (4) par spyod pa’i bar chad du ’gyur gyis | ma la bdag gnas ’di nas ’gro’o sñam nas | des de lta bus rkyen byas te gnas de nas soṅ ba las dbyar ral na ltuṅ ba med do ||&nbsp;</span></div></div><div class='textvar' style='width:24%;'><div class='Chinese'><span id='3202300bi' class='paragraph'>
+							黄門等縁。准上應去&nbsp;</span></div></div><div class='textvar' style='width:24%;'><div class='English'><span id='3205903bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:24%;'><div class='Sanskrit'><span id='3202422bi' class='paragraph'>
+							yathāpi tad varṣopagatena bhikṣuṇā anyatmānyatamaṃ śiśum udāravarṇaṃ raṃjanīyaṃ mātṛgrāmaṃ dṛṣṭvā ayoniśo nimittam udgṛhītaṃ bhavati / tatra varṣopagatasya bhikṣor evaṃ bhavaty. aham asminn āvāse varṣā upagataḥ. mayā cānyatmānyatamaṃ śiśum udāravarṇaṃ raṃjanīyaṃ mātṛgrāmaṃ dṛṣṭvā ayoniśo nimittam udgṛhītaṃ. ahaṃ ced asminn āvāse varṣā vaseyaṃ syān me atonidānaṃ jīvitāntarāyaḥ śrāmaṇyāntarāyaḥ brahmacaryāntarāyaḥ. yanv aham asmād āvāsāt prakrāmeyaṃ. sa tasmād āvāsāt prakrāmaty. etad eva pratyayaṃ kṛtvā anāpattir varṣācchede //&nbsp;</span></div></div><div class='textvar' style='width:24%;'><div class='Tibetan'><span id='3201817bi' class='paragraph'>
+							’di ltar yaṅ dbyar gnas par dam bcas pa’i dge sloṅ gis bud med gźon nu mdog (5) mdzes pa chags par ’os pa źig mthoṅ nas tshul bźin ma yin pa’i yid la byed pa’i mtshan ma bzuṅ bar gyur to || de na dbyar gnas par dam bcas pa’i dge sloṅ ’di sñam du sems te | gnas ’dir bdag dbyar gnas par dam bcas na bud med gźon nu (6) mdzes pa chags par ’os pa źig mthoṅ nas tshul bźin ma yin pa yid la byed pa’i mtshan ma bzuṅ bas gnas ’dir bdag dbyar gnas na gźi des bdag gi srog gi bar chad daṅ | dge spyoṅ gi tshul gyi bar chad daṅ | tshaṅs par spyod pa’i bar chad du ’gyur (7) gyis | ma la bdag gnas ’di nas ’gro’o sñam nas | des de lta bus rkyen byas te gnas de nas soṅ ba las dbyar ral na ltuṅ ba med do ||&nbsp;</span></div></div><div class='textvar' style='width:24%;'><div class='Chinese'><span id='3202301bi' class='paragraph'>
+							(3)若苾芻作安居竟。若見女人。而生欲想。不能(4)禁止煩惱。恐失梵行。亦應離去&nbsp;</span></div></div><div class='textvar' style='width:24%;'><div class='English'><span id='3205904bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:24%;'><div class='Sanskrit'><span id='3202423bi' class='paragraph'>
+							yathāpi tad varṣopagatasya bhikṣor nidhānam upadarśayanti. tatra varṣopagatasya bhikṣor evaṃ bhavaty. aham asminn āvāse varṣā upagata. idam eva nidhaya upadarśayanti. ahaṃ ced asminn āvāse varṣāṃ vaseyaṃ syān me atonidānaṃ jīvitāntarāyaḥ śrāmaṇyāntarāyo brahmacaryāntarāyaḥ. yanv aham asmād āvāsāt prakrameyaṃ. sa tasmād āvāsāt prakrāmaty. etad eva pratyayaṃ kṛtvā anāpattir varṣācchede //&nbsp;</span></div></div><div class='textvar' style='width:24%;'><div class='Tibetan'><span id='3201818bi' class='paragraph'>
+							’di ltar yaṅ dbyar gnas par dam bcas pa’i dge sloṅ gis nor gyi gter źig mthoṅ ṅo || de na dbyar gnas par (246b1) dam bcas pa’i dge sloṅ ’di sñam du sems te | gnas ’dir bdag dbyar gnas bar dam bcas na bdag gis ’dir nor gyi gter źig mthoṅ bas | gnas ’dir bdag dbyar gnas na gźi des bdag gi srog gi bar chad daṅ | dge sbyoṅ gi tshul gyi bar chad (2) daṅ | tshaṅs par spyod pa’i bar chad du ’gyur gyis | ma la bdag gnas ’di nas ’gro’o sñam nas | des de lta bus rkyen byas te gnas de nas soṅ ba las dbyar ral na ltuṅ ba med do ||&nbsp;</span></div></div><div class='textvar' style='width:24%;'><div class='Chinese'><span id='3202302bi' class='paragraph'>
+							(5)若苾芻作安居竟。見有伏藏。即作是念。我住(6)於此。恐當不能禁止其心。而便取物。佛言。移(7)去無罪&nbsp;</span></div></div><div class='textvar' style='width:24%;'><div class='English'><span id='3205905bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:24%;'><div class='Sanskrit'><span id='3202424bi' class='paragraph'>
+							yathāpi tad varṣopagataṃ bhikṣuṃ jñātaya upasaṃkramyāpratirūpayā upanimantraṇayā upanimantrayati / kasmāt tvam ārya muṇḍaḥ pātrapāṇir anuveśmānuveśma kulāny upasaṃkramasi. imāni ca te śītalāni kāṣāyāṇi vastrāṇi kāyaṃ paritāpayanti. ehi tvam ārya. niṣadya kāmāṃś ca paribhuṃkṣva dānāni ca dehi puṇyāni ca kuru. tatra varṣopagatasya bhikṣor evaṃ bhavaty. (78v = GBM 739) aham asminn āvāse varṣā upagata. ime ca me jñātaya upasaṃkramyāpratirūpayā upanimantraṇayā upanimantrayanti / kasmāt tvam ārya muṇḍaḥ pātrapāṇir anuveśmānuveśma kulāny upasaṃkramasi. imāni ca te śītalāni kāṣāyāṇi vastrāṇi kāyaṃ paritāpayanti. ehi tvam ārya. niṣadya kāmāṃś ca paribhuṃkṣva dānāni ca dehi puṇyāni ca kuru. ahaṃ ced asminn āvāse varṣā vaseyaṃ syān me atonidānaṃ jīvitāntarāyaḥ śrāmaṇyāntarāyo brahmacaryāntarāyaḥ. yanv aham asmād āvāsāt prakrāmeyaṃ. sa tasmād āvāsāt prakramaty. etad eva pratyayaṃ kṛtvā anāpattir varṣācchede //&nbsp;</span></div></div><div class='textvar' style='width:24%;'><div class='Tibetan'><span id='3201819bi' class='paragraph'>
+							’di ltar yaṅ dbyar gnas par dam bacadasa pa’i dge sloṅ gi druṅ du gñen (3) dag ’oṅs nas mi ’tsham pa’i gsol bas gsol ba ’debs te | ’phags pa khyod ci’i phyir mgo bregs śiṅ lhuṅ bzed lag tu thogs te | rigs kyi groṅ nas groṅ du rgyu źiṅ gos dur smrig graṅ mo ’dis kyaṅ lus gduṅ bar bgyi | ’phags pa khyod tshur sbyon | (4) ’dod pa la yoṅs su spyod cig | spyin pa dag stsol cig | bsod nams dag gyis śig | de na dbyar gnas par dam bcas pa’i dge sloṅ ’di sñam du sems te | bdag gnas ’dir dbyar gnas par dam bcas pas bdag gi druṅ du gñen dag ’oṅs nas mi (5) ’tsham pa’i gsol bas gsol ba ’debs te | ’phags pa khyod ci’i phyir mgo bregs śiṅ lhuṅ bzed lag tu thogs te | rigs kyi groṅ nas groṅ du rgyu źiṅ gos dur smrig graṅ mo ’dis kyaṅ lus gduṅ bar bgyi | ’phags pa khyod tshul sbyon || ’dod pa la (6) yoṅs su spyod cig | spyin pa dag stsol cig | bsod nams dag gyis śig ces zer te | gal te gnas ’dir bdag dbyar gnas na gźi des bdag gi srog gi bar chad daṅ | dge sbyoṅ gi tshul gyi bar chad daṅ | tshaṅs par spyod pa’i bar chad du ’gyur gyis (7) ma la bdag gnas ’di nas ’gro’o sñam nas | des de lta bus rkyen byas te gnas de nas soṅ ba las dbyar ral na ltuṅ ba med do ||&nbsp;</span></div></div><div class='textvar' style='width:24%;'><div class='Chinese'><span id='3202303bi' class='paragraph'>
+							(8)若苾芻於安居内。忽有親里眷屬。來諫苾芻(9)住止。苾芻嫌賤。移向餘處者。同前無過。&nbsp;</span></div></div><div class='textvar' style='width:24%;'><div class='English'><span id='3205906bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:24%;'><div class='Sanskrit'><span id='3202425bi' class='paragraph'>
+							&nbsp;</span></div></div><div class='textvar' style='width:24%;'><div class='Tibetan'><span id='3201820bi' class='paragraph'>
+							&nbsp;</span></div></div><div class='textvar' style='width:24%;'><div class='Chinese'><span id='3202304bi' class='paragraph'>
+							又復(10)苾芻。若有女男半擇迦等。來請安居。既受彼(11)請。然斯施主。或負他物。或復殺害他人。或劫(12)奪他人財物。或於住處。若有虎狼師子等惡(13)獸諸難。來怖施主。或時走去。或時身死。時彼(14)苾芻作是念曰。此之施主。請我安居。復有如(15)前諸難事起。我今住此。或失梵行。或失命等(16)縁來。移向餘處安居者。同前無犯&nbsp;</span></div></div><div class='textvar' style='width:24%;'><div class='English'><span id='3205907bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:24%;'><div class='Sanskrit'><span id='3202426bi' class='paragraph'>
+							&nbsp;</span></div></div><div class='textvar' style='width:24%;'><div class='Tibetan'><span id='3201821bi' class='paragraph'>
+							&nbsp;</span></div></div><div class='textvar' style='width:24%;'><div class='Chinese'><span id='3202305bi' class='paragraph'>
+							(17)若時住處。多有病苦縁生。苾芻住此。不安樂(18)者。佛言移向餘處安居。同前無犯&nbsp;</span></div></div><div class='textvar' style='width:24%;'><div class='English'><span id='3205908bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:24%;'><div class='Sanskrit'><span id='3202427bi' class='paragraph'>
+							&nbsp;</span></div></div><div class='textvar' style='width:24%;'><div class='Tibetan'><span id='3201822bi' class='paragraph'>
+							&nbsp;</span></div></div><div class='textvar' style='width:24%;'><div class='Chinese'><span id='3202306bi' class='paragraph'>
+							(19)又復若有女男半擇迦等。來請苾芻相就安(20)居。或有王來捉彼施主。或殺。或奪財物。是時(21)施主走向餘處。苾芻作念。此之施主。遭斯恐(22)怖。身既逃亡。我若住此。或失梵行。及命難等(23)因縁。移向餘處。同前無犯&nbsp;</span></div></div><div class='textvar' style='width:24%;'><div class='English'><span id='3205909bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:24%;'><div class='Sanskrit'><span id='3202428bi' class='paragraph'>
+							&nbsp;</span></div></div><div class='textvar' style='width:24%;'><div class='Tibetan'><span id='3201823bi' class='paragraph'>
+							&nbsp;</span></div></div><div class='textvar' style='width:24%;'><div class='Chinese'><span id='3202307bi' class='paragraph'>
+							(24)若有施主來請苾芻。而作安居。然斯施主。家(25)内忽然失火。或時身死或復逃去。苾芻作念。(26)此之施主。今忽遭火。或死或走。我獨居此。恐(27)有命難并梵行難。移向餘處。同前無犯&nbsp;</span></div></div><div class='textvar' style='width:24%;'><div class='English'><span id='3205910bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:24%;'><div class='Sanskrit'><span id='3202429bi' class='paragraph'>
+							&nbsp;</span></div></div><div class='textvar' style='width:24%;'><div class='Tibetan'><span id='3201824bi' class='paragraph'>
+							&nbsp;</span></div></div><div class='textvar' style='width:24%;'><div class='Chinese'><span id='3202308bi' class='paragraph'>
+							(28)若有施主來請苾芻。作安居事。於其住處。下(29)濕水多。恐後病生。移向餘處。同前無犯(1044a1)若有施主來請苾芻。作安居事。然於住處。側(2)言何用住此剔頭。受其飢苦。住林樹下。可還(3)歸家。多作福業。不須出家。苾芻作念。我若久(4)住。或失梵行。若有此縁。聽去。無罪&nbsp;</span></div></div><div class='textvar' style='width:24%;'><div class='English'><span id='3205911bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:24%;'><div class='Sanskrit'><span id='3202430bi' class='paragraph'>
+							yathāpi tad rājā caturaṅgaṃ balakāyaṃ sannāhya hastikāyaṃ aśvakāyaṃ rathakāyaṃ pattikāyaṃ yāvad ārāmadvāram āgatya yathā gṛhītikaṃ ghoṣayati. gṛhṇantu bhavantaḥ śramaṇāṃ śākyaputrīyāṃ pūrvavad yāvad yathā pravāraṇāvastuni evaṃ vistareṇa vācyaṃ. tatra varṣopagatasya bhikṣor evaṃ bhavaty. aham asminn āvāse varṣā upagataḥ. ayaṃ ca rājā caturaṅgaṃ balakāyaṃ sannāhya pūrvavad yāvat saced ahaṃ asminn āvāse varṣā vaseyaṃ syān me atonidānaṃ jīvitāntarāyaḥ śrāmaṇyāntarāyo brahmacaryāntarāyaḥ. yanv aham asmād āvāsāt prakrameyaṃ. sa tasmād āvāsāt prakramaty. etad eva pratyayaṃ kṛtvā anāpattir varṣācchede //&nbsp;</span></div></div><div class='textvar' style='width:24%;'><div class='Tibetan'><span id='3201825bi' class='paragraph'>
+							’di ltar yaṅ rgyal po dpuṅ gi chogs yan lag bźi go bskon pa glaṅ po che’i chogs daṅ | rta pa’i tshogs daṅ | śiṅ rta pa’i (247a1) tshogs daṅ | dbuṅ bu chuṅ gi tshogs can kun dga’ ra ba’i sgo’i bar du lhags nas spar thabs su skur pa sgrogs śiṅ | śes ldan dag śākya ’i bu’i dge sbyoṅ dag zuṅ śig ces bya ba nas | goṅ du gso sbyoṅ gi gźir ji skad bstan pa de bźin rgyas (2)par rdzogs par brjod par bya ste | de na dbyar gnas par dam bcas pa’i dge sloṅ ’di sñam du sems te | gnas ’dir bdag dbyar gnas par dam bcas na rgyal po dpuṅ gi tshogs yan lag bźi go bskor pa glaṅ po che’i tshogs daṅ | rta ba’i tshogs can źes bya (3) ba goṅ ma bźin te | gal te gnas ’dir bdag dbyar gnas na gźi des bdag gi srog gi bar chad daṅ | dge sbyoṅ gi tshul gyi bar chad daṅ | tshaṅs par spyod pa’i bar chad du ’gyur gyis | ma la bdag gnas ’di nas ’gro’o sñam nas | des de lta bus rkyen (4) byas te gnas de nas soṅ pa las dbyar ral na ltuṅ ba med do ||&nbsp;</span></div></div><div class='textvar' style='width:24%;'><div class='Chinese'><span id='3202309bi' class='paragraph'>
+							(5)若苾芻於安居内。或有王來嚴1束四兵至其(6)住處。遣捉苾芻。作如是言。當如俗法驅役。或(7)令還俗。或與娶妻。或奪衣鉢。或種種惱害。有(8)是難來。即時直去無犯。亦不破安居&nbsp;</span></div></div><div class='textvar' style='width:24%;'><div class='English'><span id='3205912bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:24%;'><div class='Sanskrit'><span id='3202431bi' class='paragraph'>
+							yathāpi tad bhikṣur yaṃ strīpuruṣapaṇḍakam upaniśritya varṣā upagato bhavati, sa rājñā gṛhīto bhavati baddho vā ghātito vā. santaḥsvāpateyaṃ vāsyāpahṛtaṃ, rājabhayena vā pararāṣṭraṃ paraviṣayaṃ niṣpalānaḥ, ucchidya vā kālagataḥ. tatra varṣopagatasya bhikṣor evaṃ bhavati. aham asminn āvāse yaṃ strīpuruṣapaṇḍakam upaniśritya varṣā upagataḥ, sa rājñā gṛhīto baddho vā ghātito vā, santaḥsvāpateyaṃ vāsyāpahṛtaṃ, rājabhayena vā pararāṣṭraṃ paraviṣayaṃ niṣpalānaḥ, ucchidya vā kālagataḥ. ahaṃ ced asminn āvāse varṣā vaseyaṃ syān me atonidānaṃ jīvitāntarāyaḥ śrāmaṇyāntarāyaḥ brahmacaryāntarāyaḥ. yanv aham asmād āvāsāt prakrāmeyaṃ. sa tasmād āvāsāt prakramaty. etad eva pratyayaṃ kṛtvā anāpattir varṣācchede //&nbsp;</span></div></div><div class='textvar' style='width:24%;'><div class='Tibetan'><span id='3201826bi' class='paragraph'>
+							’di ltar yaṅ dge sloṅ gis skyes pa ’am | bud med dam | ma niṅ gaṅ la brten nas dbyar gnas par dam bcas par gyur pa de rgyal pos bzuṅ ṅam | btson du bzuṅ ṅam | bsad dam | (5) de’i nor ’phrogs sam | rgyal po’i ’jigs pas yul ’khor gźan nam | yul gźan du bros sam śi bar gyur la | de na dbyar gnas par dam bcas pa’i dge sloṅ ’di sñam du sems te | bdag skyes pa’am | bud med dam | ma niṅ gaṅ la brten (6) nas ’dir dbyar gnas par dam bcas pa de rgyal pos bzuṅ ṅam | btson du bzuṅ ṅam | bsad dam | de’i nor ’phrogs sam | rgyal po’i ’jigs pas yul ’khoṅ gźan nam | yul gźan du bros sam śi par gyur pas | gal te bdag gnas (7) ’dir dbyar gnas na gźi des bdag gi srog gi bar chad daṅ | dge sbyoṅ gi tshul gyi bar chad daṅ | tshaṅs par spyod pa’i bar chad du ’gyur gyis | ma la bdag gnas ’di nas ’gro’o sñam nas | des de lta bus rkyen byas te gnas de nas soṅ ba las dbyar (247b1) ral na ltuṅ ba med do ||&nbsp;</span></div></div><div class='textvar' style='width:24%;'><div class='Chinese'><span id='3202310bi' class='paragraph'>
+							(9)若苾芻住處。有男子女人及半擇迦。來請苾(10)芻作安居。并供給衣食。後爲王等難來。悉自(11)逃走。無人供給。苾芻縁此。欲餘處去。無犯&nbsp;</span></div></div><div class='textvar' style='width:24%;'><div class='English'><span id='3205913bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:24%;'><div class='Sanskrit'><span id='3202432bi' class='paragraph'>
+							yathāpi tac corāḥ grāmaghātaṃ vā nagaraghātaṃ vā janapadaghātaṃ vā kṛtvā ārāmadvāram āgatya gāṃ vā hatvā mahiṣīṃ vā chagalikāṃ vā rudhirāṃgakāni rudhiravilekhanāni kṛtvā bhikṣūṇāṃ dūtam anupreṣayanti / nirgacchantv āryāḥ, vayam atra vatsyāmaḥ. tatra varṣopagatasya bhikṣor evaṃ bhavati. aham asminn āvāse varṣā upagataḥ. ime ca corā grāmaghātaṃ kṛtvā pūrvavad yāvat sa tasmād āvāsāt prakramaty. etad eva pratyayaṃ kṛtvā anāpattir varṣācchede //&nbsp;</span></div></div><div class='textvar' style='width:24%;'><div class='Tibetan'><span id='3201827bi' class='paragraph'>
+							’di ltar yaṅ chom rkun pa dag gis groṅ bcom mam | groṅ khyer bcom mam | yul lṅoṅs bcom nas kun dga’ ra ba’i sgor lhags te | ba laṅ bsad dam | ma he ’am | ra bsad pa’i khrag gis yan lag byugs nas dge (2) sloṅ rnams la pho ña btaṅ ste | ’phags pa dag phyir byuṅ śig | bdag cag ’dir gnas so źes spriṅ la | de na dbyar gnas par dam bcas pa’i dge sloṅ ’di sñam du sems te | bdag gnas ’dir dbyar gnas par dam bcas na chom rkun pa ’di dag (3) groṅ bcom mam źes bya ba’i bar goṅ ma bźin te | des de lta bus rkyen byas te gnas de nas soṅ ba las dbyar ral na ltuṅ ba med do ||&nbsp;</span></div></div><div class='textvar' style='width:24%;'><div class='Chinese'><span id='3202311bi' class='paragraph'>
+							(12)若苾芻於安居内。有諸賊來。或盜牛羊等。而(13)爲屠殺。作諸非法。來至苾芻所。作如是言。汝(14)等出去。我欲住此。若有如是惡賊。來至寺内。(15)惱亂苾芻者。即應直去。無犯&nbsp;</span></div></div><div class='textvar' style='width:24%;'><div class='English'><span id='3205914bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:24%;'><div class='Sanskrit'><span id='3202433bi' class='paragraph'>
+							yathāpi tad bhikṣur yaṃ strīpuruṣapaṇḍakam upaniśṛtya varṣā upagato bhavati, sa corair gṛhīto bhavati baddho vā ghātito vā, santasvāpateyaṃ vāsyāpahṛtaṃ bhavati, corabhayena vā pararāṣṭraṃ paraviṣayaṃ niṣpalānaḥ, ucchidya vā kālagatas. tatra varṣoṣitasya bhikṣor evaṃ bhavati aham asminn āvāse yaṃ strīpuruṣapaṇḍakam upaniśritya varṣā upagataḥ. sa corair gṛhīto baddho vā ghātito vā, santasvāpateyaṃ vāsyāpahṛtaṃ, corabhayena vā pararāṣṭraṃ paraviṣayaṃ niṣpalānaḥ, ucchidya vā kālagataḥ. ahaṃ ced asminn āvāse varṣā vaseyaṃ syān me atonidānaṃ jīvitāntarāyaḥ śrāmaṇyāntarāyaḥ brahmacaryāntarāyaḥ. yanv aham asmād āvāsāt prakrāmeyaṃ. sa tasmād āvāsāt prakrāmaty / etad eva pratyayaṃ kṛtvā (79r = GBM 741) anāpattir varṣācchede //&nbsp;</span></div></div><div class='textvar' style='width:24%;'><div class='Tibetan'><span id='3201828bi' class='paragraph'>
+							’di ltar yaṅ dge sloṅ gis bud med dam | skyes pa ’am | ma niṅ gaṅ la brten nas dbyar gnas par dam bcas par gyur (4) pa de chom rkun pas bzuṅ ṅam | bcon du bzuṅ ṅam | bsad dam | de’i nor ’phrogs sam | chom rkun pa’i ’jigs pas yul ’khor gźan nam | yul gźan du bros sam śi bar gyur la | de na dbyar gnas par dam bcas pa’i dge sloṅ ’di sñam du (5) sems te | bdag bud med dam | skyes pa’am | ma niṅ gaṅ la brten te dbyar gnas par dam bcas pa de chom rkan pa dag gis bzuṅ ṅam | bcon du bzuṅ ṅam | bsad dam | de’i nor ’phrogs sam | chom rkun pa’i ’jigs pas yul ’khor gźan (6) nam | yul gźan du bros sam śi bar gyur pas | gal te bdag gnas ’dir dbyar gnas na gźi des bdag gi srog gi bar chad daṅ | dge sbyoṅ gi tshul gyi bar chad daṅ | tshaṅs par spyod pa’i bar chad ’gyur gyis | ma la bdag gnas ’di nas ’gro’o (7) sñam nas | des de lta bus rkyen byas te gnas de nas soṅ ba las dbyar ral na ltuṅ ba med do ||&nbsp;</span></div></div><div class='textvar' style='width:24%;'><div class='Chinese'><span id='3202312bi' class='paragraph'>
+							&nbsp;</span></div></div><div class='textvar' style='width:24%;'><div class='English'><span id='3205915bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:24%;'><div class='Sanskrit'><span id='3202434bi' class='paragraph'>
+							yathāpi tad anyatamena mahallena bālena mūḍhenāvyaktenākuśalena gocare vā gocaramārge vā kulastrī vā kulakumārī vā ākruṣṭā vā bhavaty ābhāṣṭā vā parāmṛṣṭā vā. manuṣyāḥ prakupitā ārāmadvāram āgatya yathā gṛhītikām udghoṣayanti. pūrvavad yāvat sa tasmād āvāsāt prakrāmaty. etad eva pratyayaṃ kṛtvā anāpattir varṣācchede //&nbsp;</span></div></div><div class='textvar' style='width:24%;'><div class='Tibetan'><span id='3201829bi' class='paragraph'>
+							’di ltar yaṅ rgan źugs mi śes pa | rmoṅs pa | mi gsal pa | mi mkhas pa gźan źig gis spyod yul lam | spyod yul gyi lam gar rigs kyi bud (248a1) med dam | rigs kyin chuṅ la gśes sam | kha ṅan smras sam | reg pas mi rnams khros te | kun dga’ ra ba’i sgor lhags nas spar thabs su skur pa sgrogs śiṅ źes bya ba’i bar goṅ ma bźin te | des de lta bus rkyen byas te | gnas (2) de nas soṅ ba las dbyar ral na ltuṅ ba med do ||&nbsp;</span></div></div><div class='textvar' style='width:24%;'><div class='Chinese'><span id='3202313bi' class='paragraph'>
+							&nbsp;</span></div></div><div class='textvar' style='width:24%;'><div class='English'><span id='3205916bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:24%;'><div class='Sanskrit'><span id='3202435bi' class='paragraph'>
+							yathāpi tad bhikṣur yaṃ strīpuruṣapaṇḍakam upaniśṛtya varṣā upagato bhavati, sa manuṣyair gṛhīto bhavati baddho vā ghātito vā, santasvāpateyaṃ vāsyāpahṛtaṃ, manuṣyabhayena vā pararāṣṭraṃ paraviṣayaṃ niṣpalānaḥ, ucchidya vā kālagataḥ. tatra varṣoṣitasya bhikṣor evaṃ bhavati. aham asminn āvāse yaṃ strīpuruṣapaṇḍakam upaniśṛtya varṣā upagataḥ, sa manuṣyair gṛhīto baddho vā ghātito vā santasvāpateyaṃ vāsyāpahṛtaṃ, manuṣyabhayena vā pararāṣṭraṃ paraviṣayaṃ niṣpalānaḥ, ucchidya vā kālagataḥ. ahaṃ ced asminn āvāse varṣā vaseyaṃ syān me atonidānaṃ jīvitāntarāyaḥ śrāmaṇyāntarāyaḥ brahmacaryāntarāyaḥ. yanv aham asmād āvāsāt prakrameyaṃ. sa tasmād āvāsāt prakrāmaty. etad eva pratyayaṃ kṛtvā anāpattir varṣācchede //&nbsp;</span></div></div><div class='textvar' style='width:24%;'><div class='Tibetan'><span id='3201830bi' class='paragraph'>
+							’di ltar yaṅ dge sloṅ gis bud med dam | skyes pa’am | ma niṅ gaṅ la brten nas dbyar gnas par dam bcas par gyur pa de mi rnams kyis bzuṅ ṅam | bcon du bzuṅ ṅam | bsad dam | de’i nor (3) ’phrogs sam | mi ma yin pa’i ’jigs pas yul gźan nam | yul gźan du bros sam śi bar gyur la | de na dbyar gnas par dam bcas pa’i dge sloṅ ’di sñam du sems te | bdag pud med dam | skyes pa’am | ma niṅ gaṅ la brten te gnas ’dir (4) dbyar gnas par dam bcas pa de mi rnams kyis bzuṅ ṅam | bcon du bzuṅ ṅam | bsad dam | de’i nor ’phrogs sam | mi ma yin pa’i ’jigs pas yul ’khor gźan nam | yul gźan du bros sam śi bar gyur pas | gal te bdag gnas ’dir (5) dbyar gnas na gźi des bdag gi srog gi bar chad daṅ | dge sbyoṅ gi tshul gyi bar chad daṅ | tshaṅs par spyod pa’i bar chad du ’gyur gyis | ma la bdag gnas ’di nas ’gro’o sñam nas | des de lta bus rkyen byas te gnas de nas soṅ ba las dbyar ral na ltuṅ ba (6) med do ||&nbsp;</span></div></div><div class='textvar' style='width:24%;'><div class='Chinese'><span id='3202314bi' class='paragraph'>
+							(16)又若苾芻依止男女及黄門類。而作安居。時(17)彼施主。爲他拘執。怨家繋縛。非人所怖。走向(18)餘方。因斯命過。時諸苾芻作如是念。我此安(19)居。有衆過患。無復施主。由此因縁。虧我梵(20)行。爲沙門難縁。移向餘處。無破夏罪。所到之(21)處。得爲安居。即於此處。而作安居。不應出(22)界。&nbsp;</span></div></div><div class='textvar' style='width:24%;'><div class='English'><span id='3205917bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:24%;'><div class='Sanskrit'><span id='3202436bi' class='paragraph'>
+							yathāpi tad vihāraḥ amanuṣyādhyuṣite pradeśe pratiṣṭhāpito bhavati. anyatamena ca mahallena bālena mūḍhenāvyaktenākuśalenāpratirūpe pradeśe uccāraprasrāvaṃ pūrvavad yāvat sa tasmād āvāsāt prakrāmaty. etad eva pratyayaṃ kṛtvā anāpattir varṣācchede //&nbsp;</span></div></div><div class='textvar' style='width:24%;'><div class='Tibetan'><span id='3201831bi' class='paragraph'>
+							’di ltar yaṅ mi ma yin pa gnas pa’i phyogs śig tu gsug lag khaṅ brtsigs la | den rgan źugs mi śes pa | rmoṅs pa | mi gsal ba | mi mkhas pa gźan źig gis mi ruṅ ba’i phyogs śig tu bśaṅ ba daṅ gcig źes bya ba’i bar goṅ ma (7) bźin te | des de lta bus rkyen byas te gnas de nas soṅ ba las dbyar ral na ltuṅ ba med do ||&nbsp;</span></div></div><div class='textvar' style='width:24%;'><div class='Chinese'><span id='3202315bi' class='paragraph'>
+							又復先是非人住處。苾芻於此而作安居。(23)有諸老小無知之類。入此寺中遺放不淨。不(24)堪親近。&nbsp;</span></div></div><div class='textvar' style='width:24%;'><div class='English'><span id='3205918bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:24%;'><div class='Sanskrit'><span id='3202437bi' class='paragraph'>
+							yathāpi tad bhikṣur yaṃ strīpuruṣapaṇḍakam upaniśṛtya varṣā upagato bhavati, so ’manuṣyair gṛhīto vā baddho vā ghātito vā santasvāpateyaṃ vāsyāpahṛtaṃ, amanuṣyabhayena vā pararāṣṭraṃ paraviṣayaṃ niṣpalānaḥ, ucchidya vā kālagataḥ. tatra varṣopagatasya bhikṣor evaṃ bhavaty. aham asminn āvāse yaṃ strīpuruṣapaṇḍakam upaniśritya varṣā upagataḥ, so ’manuṣyair gṛhīto baddho vā ghātito vā, santasvāpateyaṃ vāsyāpahṛtam, amanuṣyabhayena vā pararāṣṭraṃ paraviṣayaṃ niṣpalānaḥ, ucchidya vā kālagataḥ. ahaṃ ced asminn āvāse varṣā vaseyaṃ syān me atonidānaṃ jīvitāntarāyaḥ śrāmaṇyāntarāyaḥ brahmacaryāntarāyaḥ. yanv aham asmād āvāsāt prakrameyaṃ. sa tasmād āvāsāt prakrāmaty. etad eva pratyayaṃ kṛtvā anāpattir varṣācchede //&nbsp;</span></div></div><div class='textvar' style='width:24%;'><div class='Tibetan'><span id='3201832bi' class='paragraph'>
+							’di ltar yaṅ dge sloṅ gis bud med dam | skyes pa’am | ma niṅ gaṅ la brten nas dbyar gnas par dam bcas par gyur pa de mi ma yin pa rnams kyis bzuṅ ṅam | (248b1) btson du bzuṅ ṅam | bsad dam | de’i nor ’phrogs sam | mi ma yin pa’i ’jigs pas yul ’khor gźan nam | yul gźan du bros sam śi bar gyur la | de na dbyar gnas par dam bcas pa’i dge sloṅ ’di sñam du sems te | bdag bud med dam | (2) skyes pa’am | ma niṅ gaṅ la brten nas ’dir dbyar gnas par dam bcas pa de mi ma yin pas bzuṅ ṅam | btson du bzuṅ ṅam | bsad dam | de’i nor ’phrogs sam | mi ma yin pa’i ’jigs pas yul ’khor gźan nam | yul gźan du bros sam (3) śi bar gyur pas | gal te bdag gnas ’dir dbyar gnas na gźi des bdag gi srog gi bar chad daṅ | dge sbyoṅ gi tshul gyi bar chad daṅ | tshaṅs par spyod pa’i bar chad du ’gyur gyis | ma la bdag gnas ’di nas ’gro’o sñam nas | des de lta bus rkyen (4) byas te gnas de nas soṅ ba las dbyar ral na ltuṅ ba med do ||&nbsp;</span></div></div><div class='textvar' style='width:24%;'><div class='Chinese'><span id='3202316bi' class='paragraph'>
+							&nbsp;</span></div></div><div class='textvar' style='width:24%;'><div class='English'><span id='3205919bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:24%;'><div class='Sanskrit'><span id='3202438bi' class='paragraph'>
+							yathāpi tad vihāro vyāḍādhyuṣite pradeśe pratiṣṭhāpito bhavati. anyatamena ca mahallena bālena mūḍhenāvyaktenākuśalena apratirūpe pradeśe uccāraprasrāvaṃ kheṭaṃ śiṅghāṇakaṃ vāntaṃ viriktaṃ choritam, aśucimrakṣitaṃ vā śayanāsanaṃ pravikṣiptaṃ. vyāḍāḥ prakupitāḥ gocare ’pi tiṣṭhanti gocaramārge ’pi caṃkrame ’pi meḍhyām api dvārakoṣṭhake ’pi, bhikṣūn apyāviśanti. tatra varṣopagatasya bhikṣor evaṃ bhavati. pūrvavad yāvat sa tasmād āvāsāt prakrāmaty. etad eva pratyayaṃ kṛtvā anāpattir varṣācchede //&nbsp;</span></div></div><div class='textvar' style='width:24%;'><div class='Tibetan'><span id='3201833bi' class='paragraph'>
+							’di ltar yaṅ gdug pa gnas pa’i phyogs śin tu gtsug lag khaṅ brtsigs la | de na rgan źugs mi śes pa | rmoṅs pa | mi gsal ba | mi mkhas pa gźan źig gis mi ruṅ ba’i phyogs (5) śig tu bśaṅ pa daṅ | gci ba daṅ | mchi la ma daṅ | snabs daṅ | skyugs pa daṅ | ’khru ba dag por źiṅ mi gtsaṅ bas spags pa’i gnas mal bźag par gyur nas gdug pa khros te spyod yul lam | spyod yul gyi lam ka’am | ’chags ’am | khyams (6) sam | sgo khaṅ rnams su ’dug nas dge sloṅ rnams la ’bab par byed de | de na dbyar gnas par dam bcas pa’i dge sloṅ ’di sñam du sems te źes bya ba goṅ ma bźin te | des de lta bus rkyen byas te gnas de nas sor ba las dbyar ral na ltuṅ ba med do ||&nbsp;</span></div></div><div class='textvar' style='width:24%;'><div class='Chinese'><span id='3202317bi' class='paragraph'>
+							&nbsp;</span></div></div><div class='textvar' style='width:24%;'><div class='English'><span id='3205920bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:24%;'><div class='Sanskrit'><span id='3202439bi' class='paragraph'>
+							yathāpi tad bhikṣur yaṃ strīpuruṣapaṇḍakam upaniśṛtya varṣā upagato bhavati, sa vyāḍair gṛhīto bhavati baddho vā ghātito vā, vyāḍabhayena vā pararāṣṭraṃ paraviṣayaṃ niṣpalānaḥ, ucchidya vā kālagataḥ. tatra varṣopagatasya bhikṣor evaṃ bhavaty. aham asminn āvāse yaṃ strīpuruṣapaṇḍakam upaniśṛtya varṣā upagataḥ. sa vyāḍair baddho vā gṛhīto vā santasvāpateyaṃ vāsyāpahṛtaṃ, vyāḍabhayena vā pararāṣṭraṃ paraviṣayaṃ niṣpalānaḥ, ucchidya vā kālagataḥ. ahaṃ ced asminn āvāse varṣā vaseyaṃ syān me atonidānaṃ jīvitāntarāyaḥ (79v = GBM 740) śrāmaṇyāntarāyaḥ brahmacaryāntarāyaḥ. yanv aham asmād āvāsāt prakrameyaṃ. sa tasmād āvāsāt prakramaty. etad eva pratyayaṃ kṛtvā anāpattir varṣācchede.&nbsp;</span></div></div><div class='textvar' style='width:24%;'><div class='Tibetan'><span id='3201834bi' class='paragraph'>
+							(7) ’di ltar yaṅ dge sloṅ gis bud med dam | skyes pa ’am | ma niṅ gaṅ la brten nas dbyar gnas par dam bcas par gyur pa de gtum po dag gis bzuṅ ṅam | bcon du bzuṅ ṅam | bsad dam | gtum po’i ’jigs pas yul ’khor gźan nam (249a1) yul gźan du bros sam śi bar gyur la | de na dbyar gnas par dam bcas pa’i dge sloṅ ’di sñam du sems te | bdag bud med dam | skyes pa’am | ma niṅ gaṅ la brten de ’dir dbyar gnas par dam bcas pa de gtum po rnams kyis bzuṅ (2) dam | btson du bzuṅ ṅam | de’i nor ’phrogs sam | gtum po’i ’jigs pas yul ’khor gźan nam | yul gźan du bros sam śi par gyur pas | gal te bdag gnas ’dir dbyar gnas na gźi des bdag gi srog gi bar chad daṅ | dge sbyoṅ gi (3) tshul gyi bar chad daṅ | tshaṅs par spyod pa’i bar chad du ’gyur gyis | ma la bdag gnas ’di nas ’gro’o sñam nas | des de lta bus rkyen byas te gnas de nas soṅ ba las dbyar ral na ltuṅ ba med do ||&nbsp;</span></div></div><div class='textvar' style='width:24%;'><div class='Chinese'><span id='3202318bi' class='paragraph'>
+							&nbsp;</span></div></div><div class='textvar' style='width:24%;'><div class='English'><span id='3205921bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:24%;'><div class='Sanskrit'><span id='3202440bi' class='paragraph'>
+							yathāpi tad vihāro nāgādhyuṣite pradeśe pratiṣṭhāpito bhavati. pūrvavad yāvat sa tasmād āvāsāt prakrāmaty. etad eva pratyayaṃ kṛtvā anāpattir varṣācchede //&nbsp;</span></div></div><div class='textvar' style='width:24%;'><div class='Tibetan'><span id='3201835bi' class='paragraph'>
+							’di ltar yaṅ klu gnas pa’i phyogs śig tu gcug lag (4) khaṅ brtsigs te źes bya ba’i bar goṅ ma bźin te | des de lta bus rkyen byas te gnas de nas soṅ ba las dbyar ral na ltuṅ ba med do ||&nbsp;</span></div></div><div class='textvar' style='width:24%;'><div class='Chinese'><span id='3202319bi' class='paragraph'>
+							&nbsp;</span></div></div><div class='textvar' style='width:24%;'><div class='English'><span id='3205922bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:24%;'><div class='Sanskrit'><span id='3202441bi' class='paragraph'>
+							yathāpi tad bhikṣur yaṃ strīpuruṣapaṇḍakam upaniśritya varṣā upagataḥ, sa nāgair gṛhīto bhavati baddho vā ghātito vā, santasvāpateyaṃ vāsyāpahṛtaṃ, nāgabhayena vā pararāṣṭraṃ paraviṣayaṃ niṣpalānaḥ, ucchidya vā kālagataḥ. tatra varṣopagatasya bhikṣor evaṃ bhavati / aham asminn āvāse yaṃ strīpuruṣapaṇḍakam upaniśritya varṣā upagataḥ, sa nāgair gṛhīto vā baddho vā ghātito vā santasvāpateyaṃ vāsyāpahṛtaṃ, nāgabhayena vā pararāṣṭraṃ paraviṣayaṃ niṣpalānaḥ, ucchidya vā kālagataḥ. ahaṃ ced asminn āvāse varṣā vaseyaṃ, syān me atonidānaṃ jīvitāntarāyaḥ śrāmaṇyāntarāyaḥ brahmacaryāntarāyaḥ. yanv aham asmād āvāsāt prakrameyaṃ. sa tasmād āvāsāt prakrāmaty. etad eva pratyayaṃ kṛtvā anāpattir varṣācchede //&nbsp;</span></div></div><div class='textvar' style='width:24%;'><div class='Tibetan'><span id='3201836bi' class='paragraph'>
+							’di ltar yaṅ dge sloṅ gis bud med dam | skyes pa’am | ma niṅ gaṅ la brten nas dbyar gnas par dam bcas par (5) gyur pa de klu rnams kyis bzuṅ ṅam | btson du bzuṅ ṅam | bsad dam | de’i nor ’phrogs sam | klu’i ’dzigs pas yul ’khor gźan nam | yul gźan du bros sam śi bar gyur la | de na dbyar gnas par dam bcas pa’i dge sloṅ ’di sñam (6) du sems te | bdag bud med dam | skyes pa ’am | ma niṅ gaṅ la brten nas ’dir dbyar gnas par dam bcas pa de klu rnams kyis bzuṅ ṅam | btson du bzuṅ ṅam | bsad dam | de’i nor ’phrogs sam | klu’i ’jigs pas yul ’khor (7) gźan nam | yul gźan du bros sam śi bar gyur pas | gal te gnas ’dir bdag dbyar gnas na gźi des bdag gi srog gi bar chad daṅ | dge sbyoṅ gi tshul gyi bar chad daṅ | tshaṅs par spyod pa’i bar chad du ’gyur gyis | ma la bdag gnas (249b1) ’di nas ’gro’o sñam nas | des de lta bus rkye na byas te gnas de nas soṅ ba las dbyar ral na ltuṅ ba med do ||&nbsp;</span></div></div><div class='textvar' style='width:24%;'><div class='Chinese'><span id='3202320bi' class='paragraph'>
+							&nbsp;</span></div></div><div class='textvar' style='width:24%;'><div class='English'><span id='3205923bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:24%;'><div class='Sanskrit'><span id='3202442bi' class='paragraph'>
+							yathāpi tad vihāraḥ dāvamadhye pratiṣṭhāpito bhavati. pūrvavad yāvat sa tasmād āvāsāt prakrāmaty. etad eva pratyayaṃ kṛtvā anāpattir varṣācchede //&nbsp;</span></div></div><div class='textvar' style='width:24%;'><div class='Tibetan'><span id='3201837bi' class='paragraph'>
+							’di ltar yaṅ nags khrod cig tu gtsug lag khaṅ brtsigs la źes bya ba’i bar goṅ ma bźin te | des de lta bus rkyen byas te gnas de nas soṅ ba las (2) dbyar ral na ltuṅ ba med do ||&nbsp;</span></div></div><div class='textvar' style='width:24%;'><div class='Chinese'><span id='3202321bi' class='paragraph'>
+							&nbsp;</span></div></div><div class='textvar' style='width:24%;'><div class='English'><span id='3205924bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:24%;'><div class='Sanskrit'><span id='3202443bi' class='paragraph'>
+							yathāpi tad bhikṣur yaṃ strīpuruṣapaṇḍakam upaniśṛtya varṣā upagato bhavati, so ’gninā dagdhaḥ, santasvāpateyaṃ vāsyāgninā dagdhaṃ, agnibhayena vā pararāṣṭraṃ paraviṣayaṃ niṣpalānaḥ, ucchidya vā kālagataḥ. tatra varṣopagatasya bhikṣor evaṃ bhavati / aham asminn āvāse yaṃ strīpuruṣapaṇḍakam upaniśṛtya varṣā upagataḥ, so ’gninā dagdhaḥ, santasvāpateyaṃ vāsyāgninā dagdhaṃ, agnibhayena vā pararāṣṭraṃ paraviṣayaṃ niṣpalānaḥ, ucchidya vā kālagataḥ. ahaṃ ced asminn āvāse varṣā vaseyaṃ syān me atonidānaṃ jīvitāntarāyo śrāmaṇyāntarāyo brahmacaryāntarāyaḥ / yanv aham asmād āvāsāt prakrameyaṃ. sa tasmād āvāsāt prakrāmaty. etad eva pratyayaṃ kṛtvā anāpattir varṣācchede //&nbsp;</span></div></div><div class='textvar' style='width:24%;'><div class='Tibetan'><span id='3201838bi' class='paragraph'>
+							’di ltar yaṅ dge sloṅ gis bud med dam | skyes pa’am | ma niṅ gaṅ la brten nas dbyar gnas par dam bcas par gyur pa de mes tshig gam | de’i nor mes tshig gam | me’i ’jigs pas yul ’khor gźan nam | yul (3) gźan du bros sam śe bar gyur la | de na dbyar gnas par dam bcas pa’i dge sloṅ ’di sñam du sems te | bdag bud med dam | skyes pa’am | ma niṅ gaṅ la brten de ’dir dbyar gnas par dam bcas pa de mes tshig gam | de’i nor mes tshig gam | (4) me’i ’jigs pas yul ’khor gźan nam | yul gźan du bros sam śi bar gyur pas | gal te gnas ’dir gdag dbyar gnas na gźi des bdag gi srog gi bar chad daṅ | dge sbyoṅ gi tshul gyi bar chad daṅ | tshaṅs par spyod pa’i bar chad du ’gyur gyis | (5) ma la bdag gnas ’di nas ’gro’o sñam nas | des de lta bus rkyen byas te gnas de nas soṅ pa las dbyar ral na ltuṅ ba med do ||&nbsp;</span></div></div><div class='textvar' style='width:24%;'><div class='Chinese'><span id='3202322bi' class='paragraph'>
+							&nbsp;</span></div></div><div class='textvar' style='width:24%;'><div class='English'><span id='3205925bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:24%;'><div class='Sanskrit'><span id='3202444bi' class='paragraph'>
+							yathāpi tad vihāro ’nūpamadhye pratiṣṭāpito bhavati. pūrvavad yāvat sa tasmād āvāsāt prakrāmaty. etad eva pratyayaṃ kṛtvā anāpattir varṣācchede //&nbsp;</span></div></div><div class='textvar' style='width:24%;'><div class='Tibetan'><span id='3201839bi' class='paragraph'>
+							’di ltar yaṅ gśoṅ źig gi dbus su gtsug lag khaṅ brtsigs la źes bya ba’i bar goṅ ma bźin te | des de lta bus rkyen byas (6) te gnas de nas soṅ ba las dbyar ral na ltuṅ ba med do ||&nbsp;</span></div></div><div class='textvar' style='width:24%;'><div class='Chinese'><span id='3202323bi' class='paragraph'>
+							又近河水。其水漂漲。損失施主家資(25)衣物。或死或走。苾芻作念。此之施主。遭斯水(26)難。我若住此。必有命梵行難生。移向餘處。同(27)前無犯。&nbsp;</span></div></div><div class='textvar' style='width:24%;'><div class='English'><span id='3205926bi' class='paragraph'>
+							.&nbsp;</span></div></div><div class='clear'></div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:24%;'><div class='Sanskrit'><span id='3202445bi' class='paragraph'>
+							yathāpi tad bhikṣur yaṃ strīpuruṣapaṇḍakam upaniśritya varṣā upagataḥ. sa udakenoḍhaḥ, santasvāpateyaṃ vāsya udakenoḍhaṃ bhavati / udakabhayena vā pararāṣṭraṃ paraviṣayaṃ niṣpalānaḥ, ucchidya vā kālagataḥ. tatra varṣopagatasya bhikṣor evaṃ bhavati. aham asminn āvāse yaṃ strīpuruṣapaṇḍakam upaniśritya varṣā upagataḥ, sa udakenoḍhaḥ santasvāpateyaṃ vāsyodakeṇodhaṃ udakabhayena vā pararāṣṭraṃ paraviṣayaṃ niṣpalānaḥ, ucchidya vā kālagataḥ. ahaṃ ced asminn āvāse varṣā vaseyaṃ syān me atonidānaṃ jīvitāntarāyaḥ śrāmaṇyāntarāyo brahmacaryāntarāyaḥ. yanv aham asmād āvāsāt prakrameyaṃ. sa tasmād āvāsāt (80r = GBM 743) prakrāmaty. etad eva pratyayaṃ kṛtvā anāpattir varṣācchede // //&nbsp;</span>							<script language="javascript" type="text/javascript">
+
+							tekstid = "3202415";
+							kilderef = "Var-v san  2 - san ";
+							$('#'+tekstid).text(kilderef);
+							</script>
+					</div></div><div class='textvar' style='width:24%;'><div class='Tibetan'><span id='3201840bi' class='paragraph'>
+							’di ltar yaṅ dge sloṅ gis bud med dam | skyes pa’am | ma niṅ gaṅ la brten te dbyar gnas par dam bcas par gyur pa de chus khyer ram | de’i nor chus khyer ram | chu’i ’digs pas yul ’khor (7) gźan nam | yul gźan du bros sam śi bar gyur la | de na dbyar gnas par dam bcas pa’i dge sloṅ ’di sñam du sems te | bdag bud med dam | skyes pa’am | ma niṅ gaṅ la brten nas dbyar gnas par dam bcas pa de chus khyer ram | de’i nor chus (250a1) khyer ram | chu’i ’jigs pas yul ’khor gźan nam | yul gźan du bros sam śi bar gyur pas | gal te bdag gnas ’dir dbyar gnas na gźi des bdag gi srog gi bar chad daṅ | dge sbyoṅ gi tshul gyi bar chad daṅ | tshaṅs par spyod pa’i (2) bar chad du ’gyur gyis | ma la bdag gźas ’di nas ’gro’o sñam nas | des de lta bus rkyen byas te gnas de nas soṅ ba las dbyar ral na ltuṅ ba med do || ||&nbsp;</span>							<script language="javascript" type="text/javascript">
+
+							tekstid = "3201810";
+							kilderef = "Var-v Kj ’dul ba ka  244b6 - Kj ’dul ba ka 249b250";
+							$('#'+tekstid).text(kilderef);
+							</script>
+					</div></div><div class='textvar' style='width:24%;'><div class='Chinese'><span id='3202324bi' class='paragraph'>
+							&nbsp;</span>							<script language="javascript" type="text/javascript">
+
+							tekstid = "3202294";
+							kilderef = "Var-v chi 義淨 Yijing  1043b16 - chi 義淨 Yijing 1044a27";
+							$('#'+tekstid).text(kilderef);
+							</script>
+					</div></div><div class='textvar' style='width:24%;'><div class='English'><span id='3205927bi' class='paragraph'>
+							.&nbsp;</span>							<script language="javascript" type="text/javascript">
+
+							tekstid = "3205897";
+							kilderef = "Var-v Comments  - Comments 245a2";
+							$('#'+tekstid).text(kilderef);
+							</script>
+					</div></div><div class='clear'></div><div class='BolkContainer'><div class='textvar' style='width:24%;'></div><div class='textvar' style='width:24%;'></div><div class='textvar' style='width:24%;'></div><div class='textvar' style='width:24%;'></div></div><div class='clear'></div><div class="fontboks"><a onClick=onOffdiv('permlink') name="permlink" href="#permlink">Permanent link</a></div><div class='clear'></div><div class='perm_felt' id='permlink'>http://www2.hf.uio.no/common/apps/permlink/permlink.php?app=polyglotta&amp;context=ctext&amp;uid=8fdbbd65-1b55-11e4-856a-001cc4ddf0f4</div></div></div><!-- infofelt --></div><!-- divControl --><div class="clear"></div>
+<div style="clear:both"></div><div class="signatur"><div class="signatur_left">
+		<a href="https://wiki.uio.no/hf/dmlf/index.php/Kategori:Polyglotta:Documentation">Go to Wiki Documentation</a></br>Enhet: <a HREF=http://www.hf.uio.no>Det humanistiske fakultet</a> &nbsp; Utviklet av: <a href="http://www.hf.uio.no/tjenester/it">IT-seksjonen ved HF</a></div><!--signatur_left -->
+		<div class="signatur_right"><a href="/polyglotta/admin/index.php">Login</a></div>
+		<div style="clear:both"></div></div>
+</body></html><SCRIPT LANGUAGE="JAVASCRIPT">
+	
+	$("#tr_IA").click(function(){
+	    if ($("#toggle_container_IA").is(':hidden'))
+	    	$("#toggle_container_IA").show();
+	    else{
+	        $("#toggle_container_IA").hide();
+	    }
+	    return false;
+		});
+
+	$("#tr_lang").click(function(){
+	    if ($("#toggle_container_lan").is(':hidden'))
+	    	$("#toggle_container_lan").show();
+	    else{
+	        $("#toggle_container_lan").hide();
+	    }
+	    return false;
+	});
+
+	$("#tr_img").click(function(){
+	    if ($("#toggle_container_img").is(':hidden'))
+	    	$("#toggle_container_img").show();
+	    else{
+	        $("#toggle_container_img").hide();
+	    }
+	    return false;
+	});
+
+	$("#diac2button").click(function(){
+	   if ($("#ex3a").is(':hidden')){
+		   $("#ex3a").show();
+	       $("#diac2button").html("Hide&#32Diacritica-help");
+	   }else{
+	       $("#ex3a").hide();
+	       $("#diac2button").html("Diacritica-help");
+	   }
+	   return false;
+	});
+
+	$("#diacbutton").click(function(){
+	   if ($("#diacritical_sign").is(':hidden')){
+		   	$("#diacritical_sign").show();
+	      	$("#diacbutton").html("Hide&#32diacritica");
+	   }else{
+	        $("#diacritical_sign").hide();
+	        $("#diacbutton").html("Diacritica");
+	   }
+	   return false;
+    });
+
+	$('#toggle_container_IA').click(function(e) {
+	   e.stopPropagation();
+	});
+
+	$('#toggle_container_lan').click(function(e) {
+        e.stopPropagation();
+    });
+
+	$('#toggle_container_img').click(function(e) {
+        e.stopPropagation();
+    });
+
+	$('#ex3a').click(function(e) {
+	    e.stopPropagation();
+	});
+
+	$('#diacritical_sign').click(function(e) {
+        e.stopPropagation();
+    });
+
+	//Kode for å sette inn diakritiske tegn
+	$('#diacritical > tbody > tr > td').click(function() {
+	  	//alert('red');
+		$("#sokeboks").val($("#sokeboks").val() + $(this).text());
+	});
+
+	$('.diac2button').text(($('.diacbutton').text() == 'Diacritica-help') ? 'Hide Diacritica-help' : 'Diacritica-help');
+	
+	//Lukker alle åpnede pop'uper ved klikk på siden
+	$(document).click(function() {
+		$('#toggle_container_IA').hide();
+	    
+        $('#toggle_container_lan').hide();
+    
+        $('#toggle_container_img').hide();
+   
+   		$('#diacritical_sign').hide();
+   		$("#diacbutton").html("Diacritica");
+   
+       	$('#ex3a').hide();
+       	$("#diac2button").html("Diacritica-help");
+   });
+	</SCRIPT>

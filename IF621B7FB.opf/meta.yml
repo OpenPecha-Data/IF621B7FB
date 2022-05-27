@@ -1,0 +1,35 @@
+id: IF621B7FB
+source: https://www2.hf.uio.no/polyglotta/index.php?page=library&bid=2
+source_file: null
+initial_creation_type: input
+imported: '2022-05-27T17:13:23.861467'
+last_modified: '2022-05-27T17:13:23.861608'
+parser: null
+source_metadata:
+  title: 'MSV 1,04: Varṣāvastu'
+  language: bo
+  base:
+    f8A65:
+      title: Piṇḍoddāna
+      base_file: f8A65.txt
+      order: 1
+    f6722:
+      title: Uddāna 1
+      base_file: f6722.txt
+      order: 2
+    f8907:
+      title: Uddāna 2
+      base_file: f8907.txt
+      order: 3
+    fDF10:
+      title: Uddāna 3
+      base_file: fDF10.txt
+      order: 4
+  chapter_to_tile: {}
+statistics: {}
+quality: {}
+copyright:
+  status: Unknown
+  notice: ''
+  info_url: null
+license: null

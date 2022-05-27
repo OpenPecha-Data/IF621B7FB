@@ -1,0 +1,24 @@
+id: c2dfb02838e24da1bfa3fbda4f5486a0
+annotation_type: index
+revision: '00001'
+annotations:
+  7cb84130dd044243af2a859165099034:
+    base: f6722.txt
+    span:
+      start: 0
+      end: 22867
+  93b629f07cfc464ab9cb073c9016fcfa:
+    base: f8907.txt
+    span:
+      start: 0
+      end: 15186
+  58a6b39ab9fe4a17b9b1c7a2a8b93796:
+    base: f8A65.txt
+    span:
+      start: 0
+      end: 151
+  1e667002a8724bc3b9242b243a70fabb:
+    base: fDF10.txt
+    span:
+      start: 0
+      end: 4704
